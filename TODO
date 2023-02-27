@@ -1,2 +1,22 @@
-Duomenu baziu lenteles prasau sukelti i migrations kataloga (sukurta naujai jusu projekte) ir kiekviena nauja uzklausa kaip lenteliu kurimas ar kazkas turi buti 001_create_users_table.sql 002_... 003_.... ir tt pavadinimas gali buti bet koks svarbu atspindi esme kas bus atliekama, tai jeigu yra 4-5 lenteles, tai turi buti 001, 002, 003, 004, 005, jeigu yra atliekamas kazkoks insertas tai vietoj create idedame pvz 004_insert_data_users_table.sql 
+Duomenu baziu lenteles prasau sukelti
+ i migrations kataloga 
+ (sukurta naujai jusu projekte) 
+ ir kiekviena nauja uzklausa 
+ kaip lenteliu kurimas ar kazkas turi buti 
+ 001_create_users_table.sql 002_... 003_.... 
+ ir tt pavadinimas gali buti bet koks svarbu atspindi 
+ esme kas bus atliekama, tai jeigu yra 4-5 lenteles, 
+ tai turi buti 001, 002, 003, 004, 005, jeigu yra atliekamas 
+ kazkoks insertas tai vietoj create idedame 
+ 
+ pvz 004_insert_data_users_table.sql 
 
+
+darant paskutine "sudetingesne" uzklausa nurodoma,
+ kad customer turi imti duomenis is employees lenteles,
+  bet ziurint i orders lenetele matyti,
+   kad yra atskiri customerID ir EmployeeID
+
+   ai laikyt kad customer=employee ar ne?
+Taip
+   Naudoti customerId kuri nurodo koks employee
