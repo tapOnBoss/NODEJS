@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "0.0.0-1v",
+  "description": "EXAMINAS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapOnBoss/NODEJS.git"
+  },
+  "author": "Paulius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapOnBoss/NODEJS/issues"
+  },
+  "homepage": "https://github.com/tapOnBoss/NODEJS#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  }
+}
