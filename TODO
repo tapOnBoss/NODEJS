@@ -1,22 +1,34 @@
-Duomenu baziu lenteles prasau sukelti
- i migrations kataloga 
- (sukurta naujai jusu projekte) 
- ir kiekviena nauja uzklausa 
- kaip lenteliu kurimas ar kazkas turi buti 
- 001_create_users_table.sql 002_... 003_.... 
- ir tt pavadinimas gali buti bet koks svarbu atspindi 
- esme kas bus atliekama, tai jeigu yra 4-5 lenteles, 
- tai turi buti 001, 002, 003, 004, 005, jeigu yra atliekamas 
- kazkoks insertas tai vietoj create idedame 
- 
- pvz 004_insert_data_users_table.sql 
+In the terminal window, navigate to your project folder and run the command npm init to initialize a new Node.js project.
 
+Run the command npm install express mysql dotenv nodemon to install the necessary dependencies for your project.
 
-darant paskutine "sudetingesne" uzklausa nurodoma,
- kad customer turi imti duomenis is employees lenteles,
-  bet ziurint i orders lenetele matyti,
-   kad yra atskiri customerID ir EmployeeID
+mkdir migrations
+touch create-orders-table.js
+touch create-order-details-table.js
+touch create-shippers-table.js
+touch create-products-table.js
+touch create-employees-table.js
 
-   ai laikyt kad customer=employee ar ne?
-Taip
-   Naudoti customerId kuri nurodo koks employee
+// extra for fun
+npm install spotify-web-api-node
+npm install --save spotify-web-api-node
+
+// important
+create a .env file to store your sensitive information such as database connection string and API keys. Add .env to your .gitignore file to prevent it from being pushed to your GitHub repository.
+
+//commit to repository
+git add .
+git commit -m "Initial commit"
+git push origin main
+
+/* more controling options such as 
+queryInterface object to drop the shippers table if it exists. You can use Sequelize's CLI tool to run the migration using the following command:
+
+npx sequelize-cli db:migrate
+
+This will execute the up function in the migration file and create the shippers table in the database. If you need to undo the migration, you can run the following command:
+
+npx sequelize-cli db:migrate:undo
+
+This will execute the down function and drop the shippers table from the database.
+*/
