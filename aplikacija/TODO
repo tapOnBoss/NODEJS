@@ -32,3 +32,7 @@ npx sequelize-cli db:migrate:undo
 
 This will execute the down function and drop the shippers table from the database.
 */
+// pricing extention
+npm install chai chai-http --save-dev
+//to run test 
+npm test

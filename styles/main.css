@@ -1,0 +1,280 @@
+
+/* ---------BEACH AND SUN----------- */
+body {
+    background-color: #00bfff; /* sky blue */
+}
+
+#beach {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background-image: url('path/beach.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#text {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFD700; /* gold */
+    font-size: 48px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px #00008B; /* dark blue */
+    animation: move 6s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        left: 80%;
+    }
+    70% {
+        top: 300px;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 600px;
+        opacity: 0;
+    }
+}
+
+#sun {
+    position: absolute;
+    top: 50px;
+    right: -200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FDB813; /* sunflower yellow */
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------- FOOTER SAND ----------- */
+.sand-footer {
+    background-color: #a287ec;
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+}.sand-footer:before {
+    content: "";
+    background-color: #fb9e13;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: -1;
+    transform: skewY(-4deg);
+}.sand-footer:after {
+    content: "";
+    background-color: #f8deb8;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: -1;
+    transform: skewY(4deg);
+}.sand-footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+/* --------- Random Birds -----------*/
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    z-index: 1;
+}
+nav {
+    position: relative;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 230, 92);
+    font-weight: bold;
+}.birds-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}.bird {
+    width: 50px;
+    height: 50px;
+    background-image: url('path/bird/https://t3.ftcdn.net/jpg/00/45/02/64/240_F_45026448_LsFa7I3JIW3AeNBl6kMOURCfc8myDJlP.jpg.png');
+    background-size: contain;
+    position: absolute;
+    animation: fly 10s infinite linear;
+}.bird1 {
+    top: 0;
+    left: 0;
+}.bird2 {
+    top: 50px;
+    left: 100px;
+}.bird3 {
+    top: 100px;
+    left: 50px;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(100px) translateY(-100px);
+    }
+    50% {
+        transform: translateX(200px) translateY(0);
+    }
+    75% {
+        transform: translateX(100px) translateY(100px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+#navbar a::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://t3.ftcdn.net/jpg/00/45/02/64/240_F_45026448_LsFa7I3JIW3AeNBl6kMOURCfc8myDJlP.jpg');
+    background-size: contain;
+    animation: bird-flying 5s linear infinite;
+}
+@keyframes bird-flying {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, 50px);
+    }
+    100% {
+        transform: translate(200px, 0);
+    }
+}
+/* WALK ANIMATION */
+footer {
+    background-color: #d8050500;
+    padding: 50px 0;
+    position: relative;
+}.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: inline-block;
+}
+input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button[type="submit"] {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}.beach {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    background-color: #f5d6b461;
+    overflow: hidden;
+}.human {
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    height: 300px;
+    background-image: url('https://t3.ftcdn.net/jpg/05/60/35/40/240_F_560354054_PFo5Xf3cR71MYEtWKEUoEWBqMmutmWUt.jpg');
+    background-size: contain;
+    animation: human-move 3s infinite;
+}
+@keyframes human-move {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(30px) translateY(-70px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+/*LIZARD SIDEBAR*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    z-index: 9999;
+    transition: right 0.5s ease-in-out;
+}
+#sidebar.show {
+    right: 0;
+}
+#sidebar-content {
+    padding: 20px;
+}
+#sidebar-content img {
+    width: 100%;
+    max-width: 250px;
+}
+#main-content {
+    margin-right: 300px;
+}
