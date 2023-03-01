@@ -1,4 +1,4 @@
-const Product = require('../models/productModel');
+const Product = require('../aplikacija/models/productModel');
 
 exports.getProducts = async (req, res) => {
     try {
